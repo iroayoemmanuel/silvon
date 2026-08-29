@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SILVON — Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23060c1a'/%3E%3Ctext x='16' y='23' font-family='serif' font-size='20' fill='%23d9b56a' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+    <meta name="description" content="SILVON — contemporary fine dining in Omuaran, Kwara State. Explore our seasonal menu and order online.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="nav">
+        <div class="wrap nav-inner">
+            <input type="checkbox" id="navToggle" class="nav-toggle">
+            <label for="navToggle" class="nav-toggle-label" aria-label="Toggle menu">&#9776;</label>
+            <a class="brand" href="index.html">SIL<span>V</span>ON</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="wrap">
+            <div class="section-head">
+                <div class="eyebrow">The Menu</div>
+                <h2>Curated by our Chef</h2>
+            </div>
+
+            <div class="filters" id="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="starters">Starters</button>
+                <button class="filter-btn" data-filter="mains">Mains</button>
+                <button class="filter-btn" data-filter="desserts">Desserts</button>
+                <button class="filter-btn" data-filter="drinks">Drinks</button>
+            </div>
+
+            <div class="menu-grid" id="menuGrid">
+                <!-- Starters -->
+                <div class="dish" data-cat="starters">
+                    <img class="dish-img" src="https://loremflickr.com/200/200/seafood,tuna?lock=31" alt="Tuna Crudo">
+                    <div class="dish-info">
+                        <h3>Tuna Crudo</h3>
+                        <p>Bluefin tuna, yuzu, smoked sea salt, micro herbs.</p>
+                        <div class="stars" data-dish="Tuna Crudo">
+                            <span class="star" data-value="1">&#9733;</span><span class="star" data-value="2">&#9733;</span><span class="star" data-value="3">&#9733;</span><span class="star" data-value="4">&#9733;</span><span class="star" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="dish-price">$110</div>
+                </div>
+                <div class="dish" data-cat="starters">
+                    <img class="dish-img" src="https://loremflickr.com/200/200/cheese,salad?lock=32" alt="Burrata and Heirloom">
+                    <div class="dish-info">
+                        <h3>Burrata &amp; Heirloom</h3>
+                        <p>Creamy burrata, roasted heirloom tomato, basil oil.</p>
+                        <div class="stars" data-dish="Burrata & Heirloom">
+                            <span class="star" data-value="1">&#9733;</span><span class="star" data-value="2">&#9733;</span><span class="star" data-value="3">&#9733;</span><span class="star" data-value="4">&#9733;</span><span class="star" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="dish-price">$98</div>
+                </div>
+                <div class="dish" data-cat="starters">
+                    <img class="dish-img" src="https://loremflickr.com/200/200/mushroom,bread?lock=33" alt="Wild Mushroom Toast">
+                    <div class="dish-info">
+                        <h3>Wild Mushroom Toast</h3>
+                        <p>Sourdough, forest mushrooms, truffle thyme butter.</p>
+                        <div class="stars" data-dish="Wild Mushroom Toast">
+                            <span class="star" data-value="1">&#9733;</span><span class="star" data-value="2">&#9733;</span><span class="star" data-value="3">&#9733;</span><span class="star" data-value="4">&#9733;</span><span class="star" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="dish-price">$92</div>
+                </div>
+
+                <!-- Mains -->
+                <div class="dish" data-cat="mains">
+                    <img class="dish-img" src="https://loremflickr.com/200/200/steak,grill?lock=34" alt="Dry-Aged Ribeye">
+                    <div class="dish-info">
+                        <h3>Dry-Aged Ribeye</h3>
+                        <p>40-day aged, charred leek, red wine jus, pommes.</p>
+                        <div class="stars" data-dish="Dry-Aged Ribeye">
+                            <span class="star" data-value="1">&#9733;</span><span class="star" data-value="2">&#9733;</span><span class="star" data-value="3">&#9733;</span><span class="star" data-value="4">&#9733;</span><span class="star" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="dish-price">$138</div>
+                </div>
+                <div class="dish" data-cat="mains">
+                    <img class="dish-img" src="https://loremflickr.com/200/200/lobster,seafood?lock=35" alt="Butter-Poached Lobster">
+                    <div class="dish-info">
+                        <h3>Butter-Poached Lobster</h3>
+                        <p>Maine lobster, saffron risotto, citrus beurre blanc.</p>
+                        <div class="stars" data-dish="Butter-Poached Lobster">
+                            <span class="star" data-value="1">&#9733;</span><span class="star" data-value="2">&#9733;</span><span class="star" data-value="3">&#9733;</span><span class="star" data-value="4">&#9733;</span><span class="star" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="dish-price">$145</div>
+                </div>
+                <div class="dish" data-cat="mains">
+                    <img class="dish-img" src="https://loremflickr.com/200/200/lamb,meat?lock=36" alt="Herb-Crusted Lamb">
+                    <div class="dish-info">
+                        <h3>Herb-Crusted Lamb</h3>
+                        <p>Rack of lamb, mint pea purée, roasted shallot.</p>
+                        <div class="stars" data-dish="Herb-Crusted Lamb">
+                            <span class="star" data-value="1">&#9733;</span><span class="star" data-value="2">&#9733;</span><span class="star" data-value="3">&#9733;</span><span class="star" data-value="4">&#9733;</span><span class="star" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="dish-price">$132</div>
+                </div>
+                <div class="dish" data-cat="mains">
+                    <img class="dish-img" src="https://loremflickr.com/200/200/pasta,food?lock=37" alt="Black Truffle Ravioli">
+                    <div class="dish-info">
+                        <h3>Black Truffle Ravioli</h3>
+                        <p>Hand-rolled pasta, parmesan foam, summer truffle.</p>
+                        <div class="stars" data-dish="Black Truffle Ravioli">
+                            <span class="star" data-value="1">&#9733;</span><span class="star" data-value="2">&#9733;</span><span class="star" data-value="3">&#9733;</span><span class="star" data-value="4">&#9733;</span><span class="star" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="dish-price">$120</div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="dish" data-cat="desserts">
+                    <img class="dish-img" src="https://loremflickr.com/200/200/chocolate,dessert?lock=38" alt="Dark Chocolate Fondant">
+                    <div class="dish-info">
+                        <h3>Dark Chocolate Fondant</h3>
+                        <p>Molten 70% Valrhona, salted caramel, gold leaf.</p>
+                        <div class="stars" data-dish="Dark Chocolate Fondant">
+                            <span class="star" data-value="1">&#9733;</span><span class="star" data-value="2">&#9733;</span><span class="star" data-value="3">&#9733;</span><span class="star" data-value="4">&#9733;</span><span class="star" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="dish-price">$84</div>
+                </div>
+                <div class="dish" data-cat="desserts">
+                    <img class="dish-img" src="https://loremflickr.com/200/200/dessert,custard?lock=39" alt="Vanilla Bean Crème Brûlée">
+                    <div class="dish-info">
+                        <h3>Vanilla Bean Crème Brûlée</h3>
+                        <p>Tahitian vanilla custard, torched sugar, berry.</p>
+                        <div class="stars" data-dish="Vanilla Bean Crème Brûlée">
+                            <span class="star" data-value="1">&#9733;</span><span class="star" data-value="2">&#9733;</span><span class="star" data-value="3">&#9733;</span><span class="star" data-value="4">&#9733;</span><span class="star" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="dish-price">$78</div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="dish" data-cat="drinks">
+                    <img class="dish-img" src="https://loremflickr.com/200/200/cocktail,drink?lock=40" alt="Silvon Signature Cocktail">
+                    <div class="dish-info">
+                        <h3>Silvon Signature Cocktail</h3>
+                        <p>Gin, elderflower, lemon, edible sapphire ice.</p>
+                        <div class="stars" data-dish="Silvon Signature Cocktail">
+                            <span class="star" data-value="1">&#9733;</span><span class="star" data-value="2">&#9733;</span><span class="star" data-value="3">&#9733;</span><span class="star" data-value="4">&#9733;</span><span class="star" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="dish-price">$98</div>
+                </div>
+                <div class="dish" data-cat="drinks">
+                    <img class="dish-img" src="https://loremflickr.com/200/200/wine,glass?lock=41" alt="Cellar Red">
+                    <div class="dish-info">
+                        <h3>Cellar Red (Glass)</h3>
+                        <p>Pinot Noir, Sonoma Coast, notes of cherry &amp; spice.</p>
+                        <div class="stars" data-dish="Cellar Red (Glass)">
+                            <span class="star" data-value="1">&#9733;</span><span class="star" data-value="2">&#9733;</span><span class="star" data-value="3">&#9733;</span><span class="star" data-value="4">&#9733;</span><span class="star" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="dish-price">$88</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrap">
+            <a class="brand" href="index.html">SIL<span style="color:var(--gold)">V</span>ON</a>
+            <p class="meta">
+                <strong>Hours:</strong> Tue–Sun, 5pm–11pm &nbsp;•&nbsp;
+                <strong>Location:</strong> Omuaran, Kwara State
+            </p>
+
+            <p class="meta" style="margin-top:8px;">&copy; 2026 SILVON. Crafted for the table.</p>
+        </div>
+    </footer>
+
+    <button class="cart-toggle" id="cartToggle" type="button">
+        Your Order <span class="badge" id="cartBadge">0</span>
+    </button>
+
+    <div class="cart-panel" id="cartPanel">
+        <h3>Your Order</h3>
+        <div id="cartItems"></div>
+        <div class="cart-total" id="cartTotalRow" style="display:none;">
+            <span>Total</span><span class="amt" id="cartTotal">$0.00</span>
+        </div>
+        <button class="btn" id="placeOrderBtn" type="button" style="display:none;">Place Order</button>
+        <div id="orderFormWrap"></div>
+        <div class="cart-msg" id="cartMsg"></div>
+    </div>
+
+    <script>
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const dishes = document.querySelectorAll('.dish');
+
+                filterBtns.forEach(function (btn) {
+                    btn.addEventListener('click', function () {
+                        filterBtns.forEach((b) => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        const filter = btn.dataset.filter;
+                        dishes.forEach(function (d) {
+                            if (filter === 'all' || d.dataset.cat === filter) {
+                                d.classList.remove('hide');
+                            } else {
+                                d.classList.add('hide');
+                            }
+                        });
+                    });
+                });
+
+                // ---------- Star ratings (persisted) ----------
+                const starsEls = document.querySelectorAll('.stars');
+
+                function ratingKey(name) {
+                    return 'silvon_rating_' + encodeURIComponent(name);
+                }
+                function paintStars(el, value) {
+                    el.querySelectorAll('.star').forEach(function (s) {
+                        s.classList.toggle('filled', Number(s.dataset.value) <= value);
+                    });
+                }
+
+                starsEls.forEach(function (el) {
+                    const name = el.dataset.dish;
+                    const saved = Number(localStorage.getItem(ratingKey(name))) || 0;
+                    paintStars(el, saved);
+
+                    el.querySelectorAll('.star').forEach(function (star) {
+                        star.addEventListener('click', function () {
+                            const val = Number(star.dataset.value);
+                            localStorage.setItem(ratingKey(name), String(val));
+                            paintStars(el, val);
+                        });
+                    });
+                });
+
+                // ---------- Order / Cart ----------
+                const CART_KEY = 'silvon_cart';
+                const ORDERS_KEY = 'silvon_orders';
+
+                function getCart() {
+                    try { return JSON.parse(localStorage.getItem(CART_KEY)) || []; }
+                    catch (e) { return []; }
+                }
+                function saveCart(cart) { localStorage.setItem(CART_KEY, JSON.stringify(cart)); }
+
+                function money(n) {
+                    return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+                }
+
+                // Build "Add" buttons for every dish
+                dishes.forEach(function (dish) {
+                    const name = dish.querySelector('.dish-info h3').textContent.trim();
+                    const price = parseFloat(dish.querySelector('.dish-price').textContent.replace(/[^0-9.]/g, ''));
+                    const btn = document.createElement('button');
+                    btn.className = 'add-btn';
+                    btn.type = 'button';
+                    btn.textContent = 'Add';
+                    btn.addEventListener('click', function () { addToCart(name, price); });
+                    dish.appendChild(btn);
+                });
+
+                function addToCart(name, price) {
+                    const cart = getCart();
+                    const found = cart.find(function (i) { return i.name === name; });
+                    if (found) { found.qty += 1; }
+                    else { cart.push({ name: name, price: price, qty: 1 }); }
+                    saveCart(cart);
+                    renderCart();
+                    openCart();
+                }
+
+                function changeQty(name, delta) {
+                    const cart = getCart();
+                    const item = cart.find(function (i) { return i.name === name; });
+                    if (!item) return;
+                    item.qty += delta;
+                    if (item.qty <= 0) {
+                        const idx = cart.indexOf(item);
+                        cart.splice(idx, 1);
+                    }
+                    saveCart(cart);
+                    renderCart();
+                }
+
+                function renderCart() {
+                    const cart = getCart();
+                    const itemsEl = document.getElementById('cartItems');
+                    const badge = document.getElementById('cartBadge');
+                    const totalRow = document.getElementById('cartTotalRow');
+                    const totalEl = document.getElementById('cartTotal');
+                    const placeBtn = document.getElementById('placeOrderBtn');
+                    const msg = document.getElementById('cartMsg');
+
+                    const count = cart.reduce(function (s, i) { return s + i.qty; }, 0);
+                    badge.textContent = count;
+                    msg.textContent = '';
+
+                    if (cart.length === 0) {
+                        itemsEl.innerHTML = '<p class="cart-empty">Your order is empty. Add dishes from the menu.</p>';
+                        totalRow.style.display = 'none';
+                        placeBtn.style.display = 'none';
+                        return;
+                    }
+
+                    itemsEl.innerHTML = cart.map(function (i) {
+                        return '<div class="cart-item">' +
+                            '<div><div class="ci-name">' + escapeHtml(i.name) + '</div>' +
+                            '<div class="qty">' +
+                                '<button type="button" data-act="dec" data-name="' + escapeHtml(i.name) + '">−</button>' +
+                                '<span>' + i.qty + '</span>' +
+                                '<button type="button" data-act="inc" data-name="' + escapeHtml(i.name) + '">+</button>' +
+                            '</div></div>' +
+                            '<div class="ci-price">' + money(i.price * i.qty) + '</div>' +
+                        '</div>';
+                    }).join('');
+
+                    itemsEl.querySelectorAll('.qty button').forEach(function (b) {
+                        b.addEventListener('click', function () {
+                            changeQty(b.dataset.name, b.dataset.act === 'inc' ? 1 : -1);
+                        });
+                    });
+
+                    const total = cart.reduce(function (s, i) { return s + i.price * i.qty; }, 0);
+                    totalEl.textContent = money(total);
+                    totalRow.style.display = 'flex';
+                    placeBtn.style.display = 'block';
+                }
+
+                function escapeHtml(str) {
+                    return String(str).replace(/[&<>"']/g, function (c) {
+                        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+                    });
+                }
+
+                function openCart() { document.getElementById('cartPanel').classList.add('open'); }
+                function closeCart() { document.getElementById('cartPanel').classList.remove('open'); }
+
+                document.getElementById('cartToggle').addEventListener('click', function () {
+                    document.getElementById('cartPanel').classList.toggle('open');
+                });
+
+                document.getElementById('placeOrderBtn').addEventListener('click', function () {
+                    const wrap = document.getElementById('orderFormWrap');
+                    wrap.innerHTML =
+                        '<form class="order-form" id="orderForm">' +
+                            '<div class="field"><label>Your Name</label><input type="text" id="orderName" placeholder="Oloruntoba Iroayo Emmanuel" required></div>' +
+                            '<div class="field"><label>Phone</label><input type="tel" id="orderPhone" placeholder="+234 700 000 0000" required></div>' +
+                            '<button type="submit" class="btn">Confirm Order</button>' +
+                        '</form>';
+                    wrap.querySelector('#orderForm').addEventListener('submit', function (e) {
+                        e.preventDefault();
+                        const cart = getCart();
+                        if (cart.length === 0) return;
+                        const name = document.getElementById('orderName').value.trim();
+                        const phone = document.getElementById('orderPhone').value.trim();
+                        if (!name || !phone) {
+                            document.getElementById('cartMsg').textContent = 'Please enter your name and phone.';
+                            document.getElementById('cartMsg').className = 'cart-msg err';
+                            return;
+                        }
+                        const total = cart.reduce(function (s, i) { return s + i.price * i.qty; }, 0);
+                        // Generate a readable order number
+                        const orderNo = 'SILV-' + Date.now().toString().slice(-6);
+                        let orders = [];
+                        try { orders = JSON.parse(localStorage.getItem(ORDERS_KEY)) || []; } catch (err) {}
+                        orders.push({
+                            orderNo: orderNo,
+                            name: name,
+                            phone: phone,
+                            items: cart,
+                            total: total,
+                            created: new Date().toISOString()
+                        });
+                        localStorage.setItem(ORDERS_KEY, JSON.stringify(orders));
+
+                        localStorage.removeItem(CART_KEY);
+                        wrap.innerHTML = '';
+                        renderCart();
+                        const msg = document.getElementById('cartMsg');
+                        msg.textContent = 'Order ' + orderNo + ' placed! Total ' + money(total) + '. We will call you to confirm.';
+                        msg.className = 'cart-msg ok';
+                    });
+                });
+
+                renderCart();
+    </script>
+</body>
+</html>
